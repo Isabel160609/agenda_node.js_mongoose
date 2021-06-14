@@ -1,0 +1,45 @@
+//modulo para interaccionar directamente con la base de datos
+
+
+###
+GET http://localhost:3000/personas
+
+###
+POST  http://localhost:3000/personas
+content-type: application/json
+
+{
+
+     "nombre": "Isa",
+    "apellidos": "domènech de Mena",
+    "edad": 42,
+    "cumple": "02/15/1975",
+    "dni": "46354180a",
+    "color": "vèrde",
+    "sexo": "hombre"
+
+}
+
+###
+GET http://localhost:3000/personas/60ba5912dfde7a989cbcd289
+
+###
+DELETE  http://localhost:3000/personas/60ba5912dfde7a989cbcd289
+
+###
+
+PUT http://localhost:3000/personas/60c07a411f3eb78f24b8cc0b
+content-type: application/json
+
+{
+
+    "nombre": "Ju1",
+    "apellidos": "Sa1",
+    "edad": 142,
+    "cumple": "02/15/2950",
+    "dni": "4635418",
+    "color": "vèr1",
+    "sexo": "hmbre"
+    
+
+}
